@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="EKONA MINGA KERVOISE GUSTAVE">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>EDC</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/heroes/">
+   <script src="https://cdnjs.com/libraries/Chart.js"></script> 
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+	<script src="package/dist/chart.js"></script>  
+	
+	
+  </head>
+  <body>
+ 
+  
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand logoText" href="#">EDC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample05">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Mon Choix</a>
+          </li>
+		  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Départements</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+              <li><a class="dropdown-item" href="#">GAM</a></li>
+              <li><a class="dropdown-item" href="#">GC</a></li>
+			  <li><a class="dropdown-item" href="#">GE</a></li>
+              <li><a class="dropdown-item" href="#">GESI</a></li>
+			  <li><a class="dropdown-item" href="#">GIT</a></li>
+              <li><a class="dropdown-item" href="#">GM</a></li>
+              <li><a class="dropdown-item" href="#">GMP</a></li>
+			  <li><a class="dropdown-item" href="#">GP</a></li>
+              <li><a class="dropdown-item" href="#">QHSEI</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Statistiques</a>
+          </li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <main>
+  
+          <div class = "graphique">
+		  
+				<canvas id = "myChart" width="400" height = "300">
+				Verifiez que javascript est activé dans votre navigateur
+				</canvas>
+				<canvas id = "chart2" width="600" height = "600">
+				Verifiez que javascript est activé dans votre navigateur
+				</canvas>
+	 
+          </div>
+</main>   
+<script>
+	
+		var myContext = document.querySelector('#myChart').getContext('2d');
+		var myChartConfig = 
+		{
+		  type: 'bar',
+		  data: {
+		  labels: ["GAM","GC","GE","GESI","GIT","GM","GMP","GP"],
+		  datasets:[
+		  {
+			label: "1er choix", 
+			data: [100, 140, 23,90, 53, 23,16, 14],
+			backgroundColor:['blue','blue','blue']
+		  },
+		  {
+			label: "2ème choix", 
+			data: [100, 140, 23,100, 140, 23,100, 140],
+			backgroundColor:['green','green','green']
+		  },
+		  {
+			label: "3ème choix", 
+			data: [100, 140, 23,100, 140, 23,100, 140],
+			backgroundColor:['red','red','red']
+		  }]
+		 },
+		  options:{responsive:true}
+		}
+		var myChart = new Chart(myContext, myChartConfig);
+		/*
+		var canvas = document.getElementById('myChart');
+        var context = canvas.getContext('2d');
+		context.fillStyle = "gold";
+		context.fillRect(0, 0, 50, 80);
+		context.fillStyle = "rgba(23, 145, 167, 0.5)";
+		context.fillRect(40, 25, 40, 40);
+		*/
+		
+		var data = {
+  labels: ["January", "February", "March", "April", "May", "June", "July","August", "November", "December"],
+  datasets: [
+      {
+          label: "Sodium intake",
+          fillColor: "rgba(220,220,220,0.2)",
+          strokeColor: "rgba(220,220,220,1)",
+          pointColor: "rgba(220,220,220,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(220,220,220,1)",
+          data: [165, 159, 180, 181, 156, 155, 140]
+      },
+      {
+          label: "Sugar intake",
+          fillColor: "rgba(151,187,205,0.2)",
+          strokeColor: "rgba(151,187,205,1)",
+          pointColor: "rgba(151,187,205,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [128, 148, 140, 119, 186, 127, 190]
+      }
+  ]
+}
+
+var ctx = new Chart(document.getElementById("chart2").getContext("2d")).Line(data);
+	
+	</script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+  <footer class = "fixed-bottom">
+		 
+    <p>  <img class = "logo" src = "images/logoENSPD.png" />&copy; 2021 ENSPD, Inc. &middot;  </p>
+		 
+</footer>
+</html>

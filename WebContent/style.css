@@ -1,0 +1,160 @@
+body
+{
+	background-image:linear-gradient(50deg, black, blue);
+	
+	
+}
+h1,h2
+{
+	color:yellow;
+}
+marquee
+{
+	background-color:green;
+	color:yellow;
+	font-weight: bold;
+	text-decoration:blink;
+}
+
+legend
+{
+	color:red;
+}
+.normal
+{
+	color:black;
+	
+}
+.error
+{
+	color:red;
+}
+section
+{
+	color:white;
+}
+
+.nav-item
+{
+	padding-left:15px;
+	font-weight: bold;
+	text-transform:uppercase;
+	text-align:center;
+}
+.approved
+{
+	display:flex;
+	color:black;
+	
+}
+.choixP
+{
+	margin-bottom:10px;
+	display:flex;
+	text-align: center;
+	justify-content:center;
+	
+}
+
+.cacher
+{
+	display:none;
+}
+.dropdown-item
+{
+	font-weight: bold;
+	text-transform:uppercase;
+	color:yellow;
+	background-color:black;
+}
+.logoText
+{
+	font-family:"Century Gothic",Impact, "Arial Black", Arial, Verdana, sans-serif;
+	font-size:20px;
+	text-shadow:5px 5px 5px 5px yellow;
+	background-color: green;
+	font-weight: bold;
+	text-transform:uppercase;
+	padding-left:5px;
+	padding-right:5px;
+}
+.seperator {
+ color:white;
+ height:4px;
+}
+
+.card-header {
+ background:gray;
+}
+.b-divider {
+  height: 2rem;
+  background-color: white;
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  margin-bottom:10px;
+  margin-top:15px;
+}
+main
+{
+	margin-top:40px;
+}
+.container
+{
+	
+	box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+.firstE
+{
+	margin-top:40px;
+}
+.choixF
+{
+	padding:4px 4px 4px 4px;
+}
+.centered
+{
+	display:flex;
+	justify-content:center;
+	
+}
+
+.bold
+{
+	font-weight: bold;
+}
+.gray
+{
+	color:gray;
+}
+.userB
+{
+	display: flex;
+}
+.user
+{
+	text-align:right;
+	padding-right:3px;
+	right:0px;
+}
+#descripT
+{
+	color:white;
+}
+.graphique
+{
+	background-color:white;
+ 
+}
+footer
+{
+	border: 3px yellow double;
+	text-align:center;
+	padding-top:5px;
+	background-color:white;
+}
+.logo
+{
+	width:25px;
+	height:27px;
+}
